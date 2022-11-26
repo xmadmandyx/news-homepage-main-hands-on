@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/Inter-VariableFont_slnt\,wght.ttf')
+}
+
+@font-face {
+    font-family: 'Inter Bold';
+    src: url('../assets/fonts/static/Inter-Bold.ttf')
+}
+
+@font-face {
+    font-family: 'Inter ExtraBold';
+    src: url('../assets/fonts/static/Inter-ExtraBold.ttf')
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    padding: 4rem 2rem;
+    background-color: hsl(36, 100%,99%);
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.navigation__brand {
+    flex-grow: 1;
+}
+
+.navigation__brand img {
+    height: 4rem;
+}
+
+.navigation__container {
+    display: none;
+    flex-grow: 1;
+}
+
+.navigation__container ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navigation__container li {
+    list-style: none;
+}
+
+.navigation__container a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-family: 'Inter', sans-serif;
+    color: hsl(236, 13%, 42%);
+}
+
+.navigation__container a:hover {
+    color: hsl(5, 85%, 63%);
+}
+
+@media(min-width: 768px) {
+    .navigation__container {
+        display: block;
+    }
+
+    .navigation__icon {
+        display: none;
+    }
+}
